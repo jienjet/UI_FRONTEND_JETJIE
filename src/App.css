@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.chat-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-message {
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  max-width: 75%;
+  line-height: 1.4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user {
+  background-color: #007bff;
   color: white;
+  margin-left: auto;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+.bot {
+  background-color: #e5e5ea;
+  color: black;
+  margin-right: auto;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
 }
